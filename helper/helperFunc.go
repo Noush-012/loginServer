@@ -53,7 +53,7 @@ func SessionAndCookie(r *http.Request) (db.Session, bool) {
 
 // get cookie if need
 func GetCookieVal(r *http.Request) (string, bool) {
-	cookie, err := r.Cookie("session") // creating cookie name in client side by name "session"
+	cookie, err := r.Cookie("session") // Checking cookie named  "session"
 
 	if CheckError(err, " getting Cokkie") {
 		fmt.Println("session and cokkie func error to get cookie")
